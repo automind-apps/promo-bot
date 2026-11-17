@@ -1,0 +1,21 @@
+# Dependências
+node_modules/
+
+# Segredos — bloqueia todos os .env, exceto o .example (template)
+.env*
+!.env.example
+
+# Dados locais (banco, índice vetorial, backups)
+data/
+
+# Logs
+*.log
+logs/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

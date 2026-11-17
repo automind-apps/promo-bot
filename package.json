@@ -1,0 +1,32 @@
+{
+  "name": "promo-bot",
+  "version": "0.1.0",
+  "description": "Bot de ofertas com RAG, tool calling e fine-tune",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node --env-file=.env.dev --watch src/index.js",
+    "start": "node --env-file=.env.prod src/index.js",
+    "test": "node --env-file=.env.dev --test",
+    "lint": "eslint .",
+    "dry-run": "node --env-file=.env.dev scripts/dry-run.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "node-cron": "^3.0.3",
+    "openai": "^4.68.0",
+    "pino": "^9.5.0",
+    "rss-parser": "^3.13.0",
+    "vectra": "^0.9.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "eslint": "^9.14.0",
+    "pino-pretty": "^11.3.0"
+  },
+  "allowScripts": {
+    "better-sqlite3@11.10.0": true
+  }
+}
